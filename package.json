@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^1.8.10"
   },
   "scripts": {
-   "tailwind:css": "tailwind build src/css/tailwind.gen.css -c  tailwind.config.js -o src/css/tailwind.css",
+    "tailwind:css": "tailwind build src/css/tailwind.gen.css -c  tailwind.config.js -o src/css/tailwind.css",
     "start": "yarn tailwind:css && react-scripts start",
     "build": "yarn tailwind:css && react-scripts build",
     "test": "react-scripts test",
