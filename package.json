@@ -1,0 +1,19 @@
+{
+  "name": "react",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "scripts": {
+   "tailwind:css": "tailwind build src/css/tailwind.gen.css -c  tailwind.config.js -o src/css/tailwind.css",
+    "start": "yarn tailwind:css && react-scripts start",
+    "build": "yarn tailwind:css && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
