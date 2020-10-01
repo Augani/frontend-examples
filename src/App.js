@@ -29,7 +29,7 @@ function Main(props){
     <div className="w-screen h-screen flex flex-col">
       <header className="w-full h-64 bg-black flex flex-col justify-center items-center">
           <h1 className="text-2xl lg:text-4xl font-bold text-white">All sites built with tailwind</h1>
-          <small className="text-sm text-white">By Augustus Otu</small>
+          <small className="text-xs font-bold text-gray-300">By Augustus Otu</small>
       </header>
       <main className="w-full grid grid-cols-2 lg:grid-cols-4 gap-4 p-6">
             {allSites.map((x,i)=>(<Card key={i} click={()=>props.navigate(allSites.indexOf(x)+1)} site={x}/>))}
